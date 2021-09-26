@@ -1,0 +1,182 @@
+#include <iostream>
+using namespace std;
+int main()
+{ 
+
+	
+	/* Rain
+	bool isRaining;
+
+	cout << "Is it raining (enter 1 for yes, 0 for no)? \n";
+	cin >> isRaining;
+
+	if (isRaining == true) {
+		cout << "Take an Umbrella" << endl;
+	}
+	else {
+		cout << "Leave the Umbrella" << endl;
+	} */
+	
+
+
+	/* excersises AM / PM(from pp)
+	int currentTime;
+	cout << "What time is it?\n";
+	cin >> currentTime;
+
+		if (currentTime > 12) { 
+			cout << "It's PM" << endl; 
+			
+		}
+        else { 
+			cout << "It's Am" << endl;
+			
+		} */
+
+		// extented AM/PM
+
+		int time;
+		cout << "What's the the time?\n";
+		cin >> time;
+
+		if (time <= 12) {
+			cout << "Good Morning!\n";
+		}
+		else if (time <= 18) {
+			cout << "Good Afternoon.\n";
+		}
+		else if (time <= 21) {
+			cout << "Good Evening\n";
+		}
+		else if (time <= 24) {
+			cout << "Good Night\n";
+		}
+		else if (time >= 25) {
+			cout << "Time Invalid unless you're on mars\n";
+		}
+
+
+		// Can I Vote?
+
+		int age;
+		cout << "How old are you?\n";
+		cin >> age;
+
+		if (age >= 16) {
+			cout << "You're Eligible to Vote! Go and make a difference!!\n";
+		}
+		else
+		{
+			cout << "You're too young to make such big decisions, your day will come soon!\n";
+		}
+
+		// Odd or Even ? STUCK
+		//note to self: even numbers are divisible by two and will always give you whole numbers... got assistance from odd/even flowchart algorithm
+		int n;
+		
+		cout << "Enter a Number: \n";
+		cin >> n;
+
+		
+
+		if (n = n % 2 == 0) {
+			cout << "Even\n";
+		}
+		else
+		{
+			cout << "Odd\n";
+		}
+
+
+		
+		// Number Checker
+		int num;
+		cout << "Enter a Number: ";
+		cin >> num;
+
+
+		if (num >= 1) {
+			cout << "Positive\n";
+		}
+		else if (num <= -1) {
+			cout << "Negative\n";
+		}
+		else
+		{
+			cout << "Zero\n";
+		}
+
+
+		// Profit or Loss
+
+		int cost;
+		cout << "How much did you pay?\n";
+		cin >> cost;
+
+		int price;
+		cout << "What was the price?\n";
+	    cin >> price;
+
+		if (cost > price) {
+			cout << "Profit!\n";
+		}
+		else if (price > cost) {
+			cout << "Loss...\n";
+		}
+
+		// Shape Identifier
+
+		int sides;
+		cout << "How many sides does it have: ";
+		cin >> sides;
+
+		switch (sides) {
+		case 3:
+			cout << "Looks like you've found a Triangle!";
+			break;
+		case 4:
+			cout << "You've found a Quadrilateral!";
+			break;
+		case 5:
+			cout << "Oh wow, a Pentagon!";
+			break;
+		case 6:
+			cout << "That would make it a Hexagon.";
+			break;
+		case 7: 
+			cout << "A Heptagon!";
+			break;
+		case 8:
+			cout << "Oct means 8 so thats an Octagon";
+			break;
+		case 9:
+			cout << "9 for Nonogan!";
+			break;
+		case 10:
+			cout << "Amazing, a Decagon!";
+			break;
+		default:
+			cout << "Error 404: Shape Not found.";
+			break;
+
+		}
+
+
+
+
+
+		
+			
+
+		
+
+
+
+
+
+
+
+	return 0;
+	cin.get();
+	
+}
