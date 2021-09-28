@@ -1,0 +1,168 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+   // page 16 mark my words
+
+	
+
+	double studentGrade;
+
+	cout << "Enter the students grade: "; cin >> studentGrade; cout << "\n";
+
+	if (studentGrade >= 70) {
+
+		cout << "The student got an A!\n";
+	}
+	else if (studentGrade > 60 && studentGrade < 69) {
+
+		cout << "The student got a B.\n";
+	}
+	else if (studentGrade > 50 && studentGrade < 59) {
+		
+		cout << "The student got a C.\n";
+	}
+	else if (studentGrade > 40 && studentGrade < 49) {
+
+		cout << "The student got a D.\n";
+	}
+	else if (studentGrade < 40) {
+
+		cout << "The student got an F.\n";
+	}
+	
+
+	// page 17 starting a band
+
+	bool musicalFriend = true;
+	string friendPlays = "Guitar";
+	bool guitarist = true;
+
+	if (musicalFriend == true) {
+
+		if (guitarist == true) {
+			
+			cout << "You can start your Band!\n";
+		}
+		else
+		{
+			cout << "They need to learn an instrument\n";
+		}
+	
+	
+		
+	}
+	else
+	{
+		cout << "error message\n";
+	}
+
+
+	// page 18 comparing strings
+	// method 1
+	string s1 = "Carrot";  string s2 = "Cake";
+
+		if (s1 == s2) {
+			cout << "Strings match\n" << endl;
+		}
+		else {
+			cout << "Strings do not match\n" << endl;
+		}
+
+	// method 2
+		string s11 = "Carrot";  string s22 = "Cake";
+
+			if (s11.compare(s22) == 0) {
+				cout << "Strings match\n" << endl;
+			}
+			else {
+				cout << "Strings do not match\n" << endl;
+			}
+
+
+		// page 19 killing time
+
+			int time;
+			cout << "How Long will your friend be: "; cin >> time; 
+			double money;
+			cout << "How much money do you have: "; cin >> money; 
+
+
+			if (time >= 15) {
+
+				if (money >= 5) {
+
+					cout << "Go get some coffee and wait.\n";
+				}
+				else
+				{
+					cout << "Go take a walk.\n";
+				}
+			}
+			else if (time < 15) {
+
+				cout << "Wait for your friend in the food court\n";
+			}
+		
+
+			// page 20 earthquakes
+
+			float magnitude;
+			cout << "Enter the Magnitude: "; cin >> magnitude; cout << "\n";
+			
+
+			if (magnitude < 2.0) {
+
+				cout << "Micro, nothing to worry about.\n";
+			}
+			else if (magnitude == 2.0 || magnitude < 3.0) {
+
+				cout << "Very minor.\n";
+			}
+			else if (magnitude == 3.0 || magnitude < 4.0) {
+
+				cout <<  "Minor.\n";
+			}
+			else if (magnitude == 4.0 || magnitude < 5.0) {
+
+				cout << "Light.\n";
+			}
+			else if (magnitude == 5.0 || magnitude < 6.0) {
+
+				cout << "Moderate.\n";
+			}
+			else if (magnitude == 6.0 || magnitude < 7.0) {
+
+				cout << "Strong, hide under a doorframe.\n";
+			}
+			else if (magnitude == 7.0 || magnitude < 8.0) {
+
+				cout << "Major.\n";
+			}
+			else if (magnitude == 8.0 || magnitude < 9.0) {
+
+				cout << "Great. (thats not sarcasm, you should really try and get somewhere safe)\n";
+			}
+			else if (magnitude > 10) {
+
+				cout << "Meteoric, just pray.\n";
+			}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	return 0;
+	cin.get();
+}
+
+
